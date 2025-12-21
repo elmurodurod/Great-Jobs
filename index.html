@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Great-Jobs — Работа в Англии</title>
+
+    <!-- Meta Pixel -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2370457553409571');
+        fbq('track', 'PageView');
+    </script>
+
+    <style>
+         :root {
+            --card-bg: rgba(255, 255, 255, .88);
+            --text: #0f172a;
+            --muted: #475569;
+            --wa: #25d366;
+            --tg: #229ed9;
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        html,
+        body {
+            height: 100%
+        }
+        
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: url("img/bg-uk.png") center/cover no-repeat fixed;
+        }
+        
+        body:before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, .55), rgba(255, 255, 255, .75));
+        }
+        
+        .page {
+            position: relative;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column
+        }
+        
+        .center {
+            margin: auto;
+            width: min(960px, 92vw)
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border-radius: 22px;
+            padding: clamp(18px, 3vw, 32px);
+            box-shadow: 0 40px 120px rgba(0, 0, 0, .25);
+            text-align: center;
+        }
+        
+        .logo img {
+            width: 136px;
+            height: 136px;
+            border-radius: 42px
+        }
+        
+        h1 {
+            margin: 14px 0 8px;
+            font-size: clamp(22px, 3vw, 36px);
+        }
+        
+        .sub {
+            color: var(--muted);
+            font-size: clamp(14px, 1.8vw, 17px);
+        }
+        
+        .buttons {
+            margin-top: 22px;
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            min-width: min(320px, 90vw);
+            padding: 16px 22px;
+            border-radius: 16px;
+            font-weight: 800;
+            font-size: 17px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .btn.wa {
+            background: var(--wa)
+        }
+        
+        .btn.tg {
+            background: var(--tg)
+        }
+        
+        .manager {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .manager img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .manager b {
+            display: block
+        }
+        
+        .manager span {
+            color: var(--muted);
+            font-size: 14px
+        }
+        
+        .reviews {
+            width: min(960px, 92vw);
+            margin: 30px auto 20px;
+        }
+        
+        .review {
+            background: rgba(255, 255, 255, .9);
+            border-radius: 16px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+        
+        .stars {
+            color: #fbbf24
+        }
+        
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #334155;
+            padding: 16px 0 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="center">
+            <div class="card">
+                <div class="logo"><img src="logoo.png"></div>
+                <h1>Идёт набор на вакансии в Англии</h1>
+                <p class="sub">Свяжитесь с менеджером, чтобы получить актуальные вакансии и инструкции</p>
+
+                <div class="buttons">
+                    <a class="btn wa" id="wa">WhatsApp</a>
+                    <a class="btn tg" id="tg">Telegram</a>
+                </div>
+
+                <div class="manager">
+                    <img id="mPhoto" src="img/manager.jpg">
+                    <div>
+                        <b id="mName">Александр</b>
+                        <span id="mRole">Менеджер по подбору персонала</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <div class="review">
+                <b>Айдос К. · Алматы</b>
+                <div class="stars">★★★★★</div>
+                <div>Всё объяснили и помогли с оформлением. Работаю второй месяц.</div>
+            </div>
+            <div class="review">
+                <b>Жанна С. · Астана</b>
+                <div class="stars">★★★★☆</div>
+                <div>Всегда были на связи, сопровождение отличное.</div>
+            </div>
+            <div class="review">
+                <b>Нурбол Т. · Шымкент</b>
+                <div class="stars">★★★★★</div>
+                <div>Честные условия и быстрая помощь после прилёта.</div>
+            </div>
+        </div>
+
+        <footer>© <span id="y"></span> Great‑Jobs</footer>
+    </div>
+
+    <script>
+        const MANAGER = {
+            name: "Александр",
+            role: "Менеджер по подбору персонала",
+            whatsapp: "447427174660",
+            telegram: "alexchernyshev08"
+        };
+
+        const wa = document.getElementById("wa");
+        const tg = document.getElementById("tg");
+        wa.href = "https://wa.me/" + MANAGER.whatsapp;
+        tg.href = "https://t.me/" + MANAGER.telegram;
+
+        function track(e, name, url) {
+            e.preventDefault();
+            if (window.fbq) fbq('track', 'Lead', {
+                channel: name
+            });
+            setTimeout(() => location.href = url, 200);
+        }
+        wa.onclick = e => track(e, "WhatsApp", wa.href);
+        tg.onclick = e => track(e, "Telegram", tg.href);
+
+        document.getElementById("mName").textContent = MANAGER.name;
+        document.getElementById("mRole").textContent = MANAGER.role;
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
